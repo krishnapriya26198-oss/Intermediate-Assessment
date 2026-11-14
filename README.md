@@ -65,26 +65,8 @@ DAX Calculations
 Calculated Table – EastRegionOrders
 
 Filters the original sales table to display only orders from the East region.
-
-DAX
-EastRegionOrders =
-FILTER(
-    'SalesData_1000Rows_WithIssues_copy',
-    'SalesData_1000Rows_WithIssues_copy'[Region] = "East"
-)
-
 Calculates the difference between Profit and Cost for each row.
-
-DAX 
-ProfitCostDifference = 
-
-'SalesData_1000Rows_WithIssues_copy'[Profit]
--
-'SalesData_1000Rows_WithIssues_copy'[Cost]
-Calculates the total profit.
-DAX
-TotalProfit =
-SUM('SalesData_1000Rows_WithIssues_copy'[Profit])
+Calculates the total profit
 
 Through this project, I gained practical experience in:
 
